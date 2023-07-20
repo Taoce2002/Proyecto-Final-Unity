@@ -285,6 +285,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  camera: {fileID: 7281094643409780900}
 --- !u!114 &6817777561923699074
 MonoBehaviour:
   m_ObjectHideFlags: 0

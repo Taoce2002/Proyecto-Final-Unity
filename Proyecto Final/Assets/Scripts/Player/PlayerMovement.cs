@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private float groundRadius = 0.5f;
     public LayerMask groundMask;
     private bool isGround;
+    public GameObject camera;
 
     // Update is called once per frame
     void Update()
@@ -43,6 +44,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Start(){
         pv = GetComponent<PhotonView>();
+        if(pv.IsMine){
+            camera.SetActive(true);
+        }
     }
 
     private void OnMove(InputValue value)
